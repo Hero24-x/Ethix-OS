@@ -1,59 +1,307 @@
-# Ethix-OS
-# 🚀 Ethix OS v1.0 - The Ultimate Cybersecurity & Bug Bounty Distribution
+# ETHIX OS
 
-**Ethix OS** is a professional, high-performance, and automation-focused Linux distribution built on top of the rock-solid **Debian (Bookworm)** base. Engineered specifically for security researchers, ethical hackers, and bug bounty hunters, Ethix OS eliminates post-installation setup fatigue by providing pre-configured elite tools, custom anonymity configurations, and out-of-the-box automated recon weapons.
+<div align="center">
 
----
+<img src="assets/logo.png" width="180"/>
 
-## 🔥 Key Architectural Features & Customizations
+# ETHIX OS v1.0
 
-### 1. 🛡️ Advanced OpSec & Built-in Anonymity
-* **Ethix Ghost Mode (`ethix-ghost`):** A custom system-wide script that forces all TCP and DNS traffic directly through the Tor network using strict netfilter/iptables rules. Protect your identity with a single command.
-* **MacChanger Integration:** Pre-installed and ready to easily spoof your MAC address before entering active engagements.
+### A Debian-Based Cybersecurity Distribution for Security Research, Bug Bounty Hunting & Ethical Hacking
 
-### 2. ⚡ Automated Bug Bounty & Recon Arsenal
-* **One-Click Recon (`ethix-recon`):** Run full-scale automated reconnaissance against targets. Provide a domain, and the system automatically orchestrates sub-domain discovery, live host verification, and deep vulnerability scanning.
-* **Pre-bundled Elite Tools:** 
-  * *Recon:* `subfinder`, `httpx`, `nuclei` (fully updated templates), `assetfinder`, `amass`
-  * *Fuzzing & Web:* `ffuf`, `dirsearch`, `waybackurls`
-  * *Network & Wireless Hacking:* `nmap`, `wireshark`, `aircrack-ng`, `pixiewps`, `reaver`, `hydra`, `john`
+![Version](https://img.shields.io/badge/version-1.0-blue?style=for-the-badge)
+![Base](https://img.shields.io/badge/base-Debian%2012-red?style=for-the-badge)
+![Desktop](https://img.shields.io/badge/Desktop-XFCE-green?style=for-the-badge)
+![Build](https://img.shields.io/badge/Build-Stable-success?style=for-the-badge)
 
-### 3. 🎨 Premium Hacker UI/UX & Customizations
-* **Hacker Shell (Zsh + Oh My Zsh):** Pre-configured with the premium `agnoster` theme, featuring **Auto-suggestions** (intelligent command autocompletion) and **Syntax Highlighting** for seamless terminal efficiency.
-* **Makhhan Animations (Picom Compositor):** Hardware-accelerated window animations, subtle 3D shadows, and smooth transitions that give the lightweight XFCE desktop an ultra-modern feel.
-* **Plymouth Splash Screen:** Custom boot loading animation that hides raw kernel messages behind a clean, dark cyberpunk interface.
-* **Ethix Branding:** Customized distribution wallpaper injected natively into the core desktop base environment.
+### Think Ethical • Hack Responsibly • Build Secure
 
-### 4. ⚙️ Root-by-Default Privilege System
-* Structured with pre-seeded sudoers rules (`NOPASSWD: ALL`), enabling friction-free tool execution without constantly prompting for passwords, identical to industry standards like Kali Linux.
+</div>
 
 ---
 
-## 🛠️ Integrated Custom Command Reference
+## 📖 Overview
 
-Ethix OS includes proprietary commands built directly into the system's global execution path (`/usr/local/bin/`):
+**ETHIX OS** is a professional cybersecurity-focused Linux distribution built on top of the stable and secure **Debian Bookworm** foundation.
 
-| Command | Usage | Description |
-|---|---|---|
-| `update-ethix` | `update-ethix` | Instantly updates repositories and upgrades all systems/tools in one step. |
-| `ethix-ghost` | `sudo ethix-ghost start` <br> `sudo ethix-ghost stop` | Routes the **entire OS internet traffic** safely through Tor, or restores native access. |
-| `ethix-recon` | `ethix-recon target.com` | Automates `subfinder` + `httpx` + `nuclei` and saves formatted results on your Desktop. |
+Designed for:
+
+- 🛡️ Security Researchers
+- 🎯 Bug Bounty Hunters
+- 🔍 Penetration Testers
+- 🌐 Network Security Enthusiasts
+- 💻 Linux Power Users
+
+ETHIX OS provides a ready-to-use environment with pre-configured security tools, automation workflows, privacy utilities, and performance optimizations, reducing setup time and allowing users to focus on security research and learning.
 
 ---
 
-## 🏗️ Developer Deployment & Build Instructions
+## 🚀 Why ETHIX OS?
 
-Ethix OS is built using the standard Debian `live-build` framework. To recreate or modify this image from your build directory, follow the steps below:
+Most security professionals spend hours configuring tools after installing a fresh operating system.
 
-### Directory Mapping for Custom Components:
-* **Custom Shortcuts/Executables:** `config/includes.chroot/usr/local/bin/`
-* **Sudo Privilege Hooks:** `config/includes.chroot/etc/sudoers.d/`
-* **Custom Desktop Backgrounds:** `config/includes.chroot/usr/share/images/desktop-base/`
-* **Go/Bounty Automation Hooks:** `config/hooks/normal/0900-bounty-tools.chroot`
-* **Zsh Terminal Styling Hooks:** `config/hooks/normal/0960-setup-zsh.chroot`
+ETHIX OS solves this by providing:
 
-### Compiling the Hybrid ISO File:
+✅ Pre-configured security environment
 
-1. **Purge existing cache and temporary build states:**
-   ```bash
-   sudo lb clean --purge
+✅ Automated reconnaissance workflows
+
+✅ Privacy-focused utilities
+
+✅ Lightweight and fast desktop experience
+
+✅ Professional cybersecurity branding
+
+✅ Debian stability with modern tooling
+
+---
+
+# 🔥 Core Features
+
+## 🛡️ Security & Privacy
+
+### ETHIX Ghost Mode
+
+Route system traffic securely through the Tor network.
+
+```bash
+sudo ethix-ghost start
+sudo ethix-ghost stop
+```
+
+Features:
+
+- Tor Traffic Routing
+- DNS Leak Prevention
+- Privacy Protection
+- Quick Enable/Disable
+
+---
+
+## 🎯 Automated Reconnaissance
+
+### ETHIX Recon
+
+Perform reconnaissance with a single command.
+
+```bash
+ethix-recon example.com
+```
+
+Automated workflow:
+
+```text
+Subfinder
+   ↓
+HTTPX
+   ↓
+Nuclei
+   ↓
+Results Export
+```
+
+Generated reports are automatically saved.
+
+---
+
+## ⚡ Pre-installed Security Toolkit
+
+### Reconnaissance
+
+- Subfinder
+- Amass
+- Assetfinder
+- HTTPX
+- Nuclei
+- Waybackurls
+
+### Web Application Security
+
+- FFUF
+- Dirsearch
+- Burp Suite Community
+- Curl
+- Wget
+
+### Network Security
+
+- Nmap
+- Wireshark
+- Aircrack-ng
+
+### Password Auditing
+
+- Hydra
+- John The Ripper
+
+### Wireless Security
+
+- Aircrack-ng
+- Reaver
+- Pixiewps
+
+---
+
+# 🎨 Desktop Experience
+
+ETHIX OS delivers a clean and professional interface.
+
+### Included Customizations
+
+- Custom ETHIX Branding
+- ETHIX Wallpapers
+- Cybersecurity Theme
+- Fast Boot Splash Screen
+- Optimized XFCE Environment
+- Modern Terminal Experience
+
+### Terminal Features
+
+- Zsh
+- Oh My Zsh
+- Autosuggestions
+- Syntax Highlighting
+- Productivity Aliases
+
+---
+
+# ⚙️ ETHIX Commands
+
+| Command | Description |
+|----------|------------|
+| `update-ethix` | Update system and tools |
+| `ethix-ghost start` | Enable Ghost Mode |
+| `ethix-ghost stop` | Disable Ghost Mode |
+| `ethix-recon target.com` | Automated reconnaissance |
+
+---
+
+# 🏗️ Technical Specifications
+
+| Component | Details |
+|------------|------------|
+| Base Distribution | Debian Bookworm |
+| Architecture | amd64 |
+| Desktop Environment | XFCE |
+| Shell | Zsh |
+| Package Manager | APT |
+| Build System | Debian Live-Build |
+| Default Theme | ETHIX Dark |
+
+---
+
+# 📂 Project Structure
+
+```text
+ETHIX-OS/
+│
+├── config/
+│   ├── hooks/
+│   ├── package-lists/
+│   └── includes.chroot/
+│
+├── assets/
+│   ├── logo.png
+│   ├── wallpapers/
+│   └── branding/
+│
+├── scripts/
+│   ├── ethix-ghost
+│   ├── ethix-recon
+│   └── update-ethix
+│
+├── docs/
+│
+└── README.md
+```
+
+---
+
+# 🛠️ Build Instructions
+
+## Install Live-Build
+
+```bash
+sudo apt update
+sudo apt install live-build -y
+```
+
+## Clean Previous Builds
+
+```bash
+sudo lb clean --purge
+```
+
+## Build ETHIX OS
+
+```bash
+sudo lb build
+```
+
+Generated ISO will appear inside the project directory.
+
+---
+
+# 📈 Roadmap
+
+### Version 1.x
+
+- [x] ETHIX Branding
+- [x] Security Toolkit
+- [x] Recon Automation
+- [x] Privacy Utilities
+- [x] XFCE Customization
+
+### Version 2.x
+
+- [ ] Built-in EDR
+- [ ] Threat Intelligence Dashboard
+- [ ] YARA Integration
+- [ ] Automated Reporting
+- [ ] SOC Toolkit
+- [ ] Docker Security Suite
+- [ ] Cloud Security Tools
+
+### Version 3.x
+
+- [ ] AI Security Assistant
+- [ ] Custom Package Repository
+- [ ] Enterprise Edition
+- [ ] Threat Hunting Framework
+
+---
+
+# 👨‍💻 Creator
+
+## Shibnath Hansda
+
+**Founder & Developer of ETHIX OS**
+
+Cybersecurity Enthusiast • Linux Developer • Security Researcher
+
+### Connect
+
+- GitHub: https://github.com/Hero24-x
+- Instagram: https://instagram.com/ethicalhansda
+- Email: hansdatechs24@gmail.com
+
+---
+
+# ⚠️ Disclaimer
+
+ETHIX OS is intended exclusively for educational purposes, research, cybersecurity training, laboratory environments, and authorized security assessments.
+
+Users are solely responsible for complying with all applicable laws, regulations, and organizational policies.
+
+Unauthorized access, misuse, or illegal activities are strictly discouraged.
+
+---
+
+<div align="center">
+
+### ETHIX OS
+
+**Think Ethical • Hack Responsibly • Build Secure**
+
+Built with ❤️ by **Shibnath Hansda**
+
+</div>
