@@ -276,7 +276,7 @@ Generated ISO will appear inside the project directory.
 
 Cybersecurity Enthusiast • Linux Developer • Security Researcher
 
-## 🌐 Connect
+## Connect
 
 [![GitHub](https://img.shields.io/badge/GitHub-Hero24--x-181717?style=for-the-badge&logo=github)](https://github.com/Hero24-x)
 
