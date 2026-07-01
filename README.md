@@ -1,6 +1,6 @@
 <div align="center">
-<div style="background:#00FFFF;padding:20px;border-radius:20px;display:inline-block;">
-<img src="https://iili.io/C7Qy1tI.md.png" width="280"/>
+<div style="background:#00FFFF;padding:40px;border-radius:40px;display:inline-block;">
+<img src="https://iili.io/C7Qy1tI.md.png" width="220"/>
 
 # ETHIX OS v1.0
 
